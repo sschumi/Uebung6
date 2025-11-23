@@ -7,7 +7,6 @@ public class H3_main {
         System.out.println(compareArraysVal(a,c));
         System.out.println(compareArraysVal(e,c));
         System.out.println(compareArraysVal(d,f));
-
     }
 
     public static boolean compareArraysVal(int[] a, int[] b){
