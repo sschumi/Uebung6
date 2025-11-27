@@ -15,11 +15,7 @@ public class H3_main {
         }
         for (int i = 0; i < a.length; i++){
             int y = 0;
-            if (a.length >= b.length) {
-                y = a[i];
-            } else {
-                y = b[i];
-            }
+            y = a[i];
             int anzahlA = 0;
             int anzahlB = 0;
             for (int j = 0; j < a.length; j++) {
