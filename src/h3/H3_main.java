@@ -10,13 +10,10 @@ public class H3_main {
     }
 
     public static boolean compareArraysVal(int[] a, int[] b){
-        int x = 0;
-        if (a.length >= b.length) {
-            x = a.length;
-        } else {
-            x = b.length;
+        if(a.length != b.length){
+            return false;
         }
-        for (int i = 0; i < x; i++){
+        for (int i = 0; i < a.length; i++){
             int y = 0;
             if (a.length >= b.length) {
                 y = a[i];
