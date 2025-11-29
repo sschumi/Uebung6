@@ -1,19 +1,19 @@
 package h3;
 
 public class H3_main {
-    public static void main(String[] args){
-        int[] a = {1,2,3}, b = {1,2,4}, c = {1,3,2}, d = {1,2}, e = {1,2,3}, f = {1,1,2};
-        System.out.println(compareArraysVal(a,b));
-        System.out.println(compareArraysVal(a,c));
-        System.out.println(compareArraysVal(e,c));
-        System.out.println(compareArraysVal(d,f));
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3}, b = {1, 2, 4}, c = {1, 3, 2}, d = {1, 2}, e = {1, 2, 3}, f = {1, 1, 2};
+        System.out.println(compareArraysVal(a, b));
+        System.out.println(compareArraysVal(a, c));
+        System.out.println(compareArraysVal(e, c));
+        System.out.println(compareArraysVal(d, f));
     }
 
-    public static boolean compareArraysVal(int[] a, int[] b){
-        if(a.length != b.length){
+    public static boolean compareArraysVal(int[] a, int[] b) {
+        if (a.length != b.length) {
             return false;
         }
-        for (int i = 0; i < a.length; i++){
+        for (int i = 0; i < a.length; i++) {
             int y = 0;
             y = a[i];
             int anzahlA = 0;
@@ -28,8 +28,8 @@ public class H3_main {
                     anzahlB++;
                 }
             }
-            if (anzahlA != anzahlB){
-               return false;
+            if (anzahlA != anzahlB) {
+                return false;
             }
         }
         return true;
